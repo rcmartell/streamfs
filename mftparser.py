@@ -1,10 +1,13 @@
 #!/usr/bin/python
+import array
+import math
+import os
 import sys
-from mft import *
-import os, math, array
-from struct import *
 from binascii import b2a_hex
 from functools import reduce
+from struct import *
+
+from mft import *
 
 MFT_ENTRY_SIZE = 0x400
 MFT_HEADER_LEN = 0x38

@@ -1,7 +1,7 @@
 class MFT_ENTRY():
     """Object representing a standard MFT Entry"""
     def __init__(self, entry_num=None, std_info=None, attr_list=None, filename=None, object_id=None,
-                 sec_file=None, idx_root=None, idx_alloc=None, data=None, bitmap=None):
+                 sec_file=None, idx_root=None, idx_alloc=None, data=None, bitmap=None, attrs=[]):
         self.entry_num = entry_num
         self.std_info = std_info
         self.attr_list = attr_list
@@ -12,6 +12,7 @@ class MFT_ENTRY():
         self.idx_alloc = idx_alloc
         self.data = data
         self.bitmap = bitmap
+        self.attrs = attrs
 
 class FILE_RECORD(object):
     def __init__(self, name=None, parent=None, real_size=None, data_size=None, clusters=None, res_data=None):
