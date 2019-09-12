@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+import sys
 from mft import *
 import os, math, array
 from struct import *
