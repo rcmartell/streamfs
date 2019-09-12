@@ -44,6 +44,7 @@ ATTRIBUTES = {
 NTFS_EPOCH = 0x19DB1DED53E8000
 NTFS_OEM_ID = 0x4E54465320202020
 
+
 class MFT_Parser():
     def __init__(self, img=None):
         self.img = open(img, 'rb')
